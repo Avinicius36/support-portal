@@ -1,0 +1,20 @@
+jwt:
+  secret: '[a-zA-Z0-9._]^+$Guidelines89797987formtverySrecetkeyandOtherSymbo&+1234hgG'
+
+
+server:
+  port: 9090
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/supportportal
+    password: root
+    username: root
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
