@@ -106,6 +106,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
         user.setAuthorities(ROLE_USER.getAuthorities());
         user.setProfileImageUrl(getTemporaryProFileImageURL(username));
         userRepository.save(user);
+        LOGGER.info("New User password: " + password);
         emailService.sendNewPassword(firstName, password, email);
 
         return user;

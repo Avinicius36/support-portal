@@ -148,6 +148,7 @@ public class UserResource extends ExceptionHandling {
         }
         return byteArrayOutputStream.toByteArray();
         //DEBUGGAR ESSE MÉTODO PARA ENTENDER MELHOR
+        // VOLTAR NA AULA 80 OU 81 POIS ESSE ENDPOINT NÃO ESTÁ FUNCIONANDO DIREITO
     }
 
     private ResponseEntity<HttpResponse> response(HttpStatus httpStatus, String message) {
